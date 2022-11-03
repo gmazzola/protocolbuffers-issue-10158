@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Example;
+
+message StoreInfo {
+}
+
+message BrokenMessage {
+    string first_field = 1;
+
+    reserved 2;
+    reserved "is_deprecated";
+}
